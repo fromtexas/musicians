@@ -1,0 +1,20 @@
+@mixin title($color) {
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    color: $color;
+    position: relative;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50rem;
+        height: 1px;
+        background-color: $black;
+    }
+}

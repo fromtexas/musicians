@@ -1,0 +1,17 @@
+.navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item,
+    &__item:link,
+    &__item:visited{
+        text-decoration: none;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        display: block;
+        font-size: 2.4rem;
+        padding: 1rem 2rem;
+        color: $grey;
+    }
+}
