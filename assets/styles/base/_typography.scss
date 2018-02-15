@@ -8,6 +8,27 @@ body{
     line-height: 1.7;
 }
 
-.title{
-   @include title($orange);
+.title-discography{
+    @include title(transparent);
+
+    background-image: linear-gradient(to right, rgba($orange, .9), transparent), url('../img/discography-background.png');
+    -webkit-background-clip: text;
+    background-size: contain;
+}
+
+.title-tours{
+    @include title(transparent);
+
+    background-image: linear-gradient(to bottom, $blue, rgba($blue, .2));
+    -webkit-background-clip: text;
+}
+
+.title-latest{
+    @include title($black);
+}
+
+.description{
+    color: $grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem; 
 }

@@ -1,0 +1,63 @@
+.discography{
+    margin-top: 15rem;
+    position: relative;
+
+    &__pic{
+        z-index: -1;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: -35rem;
+    }
+}
+
+.tours{
+    margin-top: 15rem;
+    position: relative;
+
+    &__top{
+        margin-bottom: 5rem;
+        width: 60%;
+    }
+
+    &__pic{
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/tours-pic.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__description{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        left: 30%;
+    }
+}
+
+.latest{
+    margin-top: 15rem;
+    position: relative;
+
+    &--left{
+        width: 50%;
+        background-color: $light-grey-2;
+        padding: 4rem;
+    }
+
+    &--right{
+        width: 50%;
+        position: relative;
+    }
+
+    &__pic{
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}

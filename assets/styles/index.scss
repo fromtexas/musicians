@@ -5,5 +5,13 @@
 @import './base/base';
 @import './base/utilities';
 
+@import './pages/home';
+
 @import './layout/navigation';
 @import './layout/header';
+
+@import './components/description-container';
+@import './components/container';
+@import './components/row';
+@import './components/song';
+@import './components/btn';
