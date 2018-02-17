@@ -1,0 +1,127 @@
+.slider{
+    margin-top: 15rem;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-image: url('../img/slider-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__arrow-container{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5rem;
+        height: 15rem;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 100;
+
+        &--left{
+            left: 0;
+        }
+
+        &--right{
+            right: 0;
+        }
+    }
+
+    &__arrow{
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        border-radius: .5rem;
+        background-color: $white;
+        transform: rotate(45deg);
+        z-index: 10;
+
+        &--left{
+            left: -13rem;
+        }
+
+        &--right{
+            right: -13rem;
+        }
+    }
+
+    &__arrow-icon{
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        
+        &--left{
+            left: 0;
+            transform: translateY(-50%) rotate(-180deg);
+        }
+
+        &--right{
+            right: 0;
+        }
+    }
+    
+    &__slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        transition: all .4s;
+        left: 100%;
+        visibility: hidden;
+    }
+
+    &__active-slide{
+        left: 0;
+        visibility: visible;
+    }
+
+    &__slide-title{
+        font-family: 'Dosis', sans-serif;
+        font-size: 2rem;
+        color: $light-grey;
+        text-transform: uppercase;
+    }
+
+    &__slide-description{
+        font-size: 1.4rem;
+        color: $grey;
+        max-width: 40%;
+        align-self: center;
+    }
+
+    &__slide-date{
+        font-size: 1.4rem;
+        color: $dark-grey;
+    }
+
+    &__dots-row{
+        position: absolute;
+        z-index: 12;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    &__dot{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid $white;
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+
+    &__active-dot{
+        background-color: $white;
+    }
+}

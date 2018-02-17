@@ -25,6 +25,10 @@ body{
 
 .title-latest{
     @include title($black);
+
+    &::before{
+        width: 70rem;
+    }
 }
 
 .description{

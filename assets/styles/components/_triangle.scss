@@ -1,0 +1,30 @@
+.triangle{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0; 
+        height: 0; 
+    }
+
+    &--right{
+        &::before{
+            right: -1rem;
+            border-top: 2rem solid transparent;
+            border-bottom: 2rem solid transparent;
+            border-left: 2rem solid $light-grey-2;
+        }  
+    }
+
+    &--left{
+        &::before{
+            left: -1rem;
+            border-top: 2rem solid transparent;
+            border-bottom: 2rem solid transparent;
+            border-right: 2rem solid $light-grey-2;
+        }
+    }
+}
