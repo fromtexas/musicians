@@ -21,3 +21,36 @@
 .margin-bottom-8{
     margin-bottom: 8rem;
 }
+
+
+.line{
+    display: block;
+    width: 1px;
+    background-color: $black;
+    margin-left: 3.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &--short-vertical-line{
+        height: 7rem;
+    }
+
+    &--long-vertical-line{
+        height: 20rem;
+    }
+
+    &--horizontal-grey{
+        width: 8vw;
+        height: 1px;
+        background-color: rgba($grey, .5);
+        margin: 0;
+    }
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.fl-center{
+    justify-content: center;
+}

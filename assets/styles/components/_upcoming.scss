@@ -1,8 +1,50 @@
 .upcoming{
     margin-top: 15rem;
-    height: 90vh;
+    height: 100vh;
     background-image: url('../img/upcoming.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
+    position: relative;
+
+    &__wrap{
+        position: absolute;
+        width: 35%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15%;
+    }
+
+    &__event{
+        &:not(:last-of-type){
+            margin-top: 10rem;
+        }
+    }
+
+    &__event-title{
+        font-size: 3rem;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 15rem;
+            height: 1px;
+            background-color: $black;
+        }
+    }
+
+    &__event-description{
+        margin-top: 1rem;
+        color: $grey;
+        font-size: 1.4rem;
+    }
+
+    &__event-date{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: $dark-grey;
+    }
 }

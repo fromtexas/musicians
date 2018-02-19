@@ -31,6 +31,14 @@ body{
     }
 }
 
+.title-upcoming{
+    @include title($blue);
+}
+
+.title-history{
+    @include title($black);
+}
+
 .description{
     color: $grey;
     font-family: 'Open Sans', sans-serif;

@@ -1,0 +1,29 @@
+.history{
+    height: 100vh;
+    margin-top: 15rem;
+    background-image: url('../img/history.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-right: 3rem;
+
+        &:first-child{
+            margin-left: 3rem;
+        }
+    }
+
+    &__date{
+        text-transform: uppercase;
+        color: rgba($grey, .5);
+        font-size: 2.5rem;
+        margin-right: 3rem;
+
+        &:first-of-type{
+            margin: 0 3rem;
+        }
+        
+    }
+}
