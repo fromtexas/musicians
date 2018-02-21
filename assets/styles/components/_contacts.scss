@@ -11,6 +11,11 @@
         right: 20%;
         top: 50%;
         transform: translateY(-50%);
+
+        @include respond(phone){
+            right: 0;
+            padding: 3rem;
+        }
     }
 
     &__description{
@@ -33,9 +38,17 @@
         margin-bottom: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        width: 100%;
+        transition: all .3s;
 
         &:focus{
             outline: none;
+            border-bottom: 1px solid $blue;
+            box-shadow: 0 1rem 2rem rgba($black, .1);
+
+            &:invalid{
+                border-bottom: 1px solid $orange;
+            }
         }
 
         &::-webkit-input-placeholder {
@@ -71,5 +84,30 @@
     &__social-icon{
         width: 2.5rem;
         height: 2.5rem;
+        transition: all .4s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    &__input-container{
+        width: 100%;
+        position: relative;
+    }
+
+    &__input-label{
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        margin-top: .5rem;
+        display: block;
+        transition: all .3s;
+        color: $grey;
+    }
+
+    &__form-input:placeholder-shown + &__input-label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
     }
 }

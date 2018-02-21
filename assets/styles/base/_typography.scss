@@ -28,6 +28,10 @@ body{
 
     &::before{
         width: 70rem;
+
+        @include respond(phone){
+            width: 43rem;
+        }
     }
 }
 

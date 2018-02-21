@@ -1,12 +1,20 @@
 .song{
     padding: 1rem;
 
+    @include respond(tab-port){
+        padding: 2rem;
+    }
+
     &--left{
         width: 45%;
     }
 
     &--right{
         width: 55%;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
     }
 
     &__year{

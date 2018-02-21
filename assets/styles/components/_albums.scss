@@ -5,9 +5,27 @@
         position: relative;
         padding: 2.5rem;
         overflow: hidden;
+        transition: all .4s;
 
         &:not(:last-child){
             margin-right: 2rem;
+
+            @include respond(tab-port){
+                margin-left: 2rem;
+            }
+        }
+
+        &:hover{
+            transform: translateY(-1rem);
+            box-shadow: 0rem .5rem 2rem rgba($black, .2);
+        }
+
+        @include respond(tab-port){
+            &:not(:first-child){
+                margin-top: 2rem; 
+            } 
+            margin-right: 2rem;
+            margin-left: 2rem;
         }
     }
 
@@ -19,6 +37,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+        object-fit: cover;
     }
 
     &__number{

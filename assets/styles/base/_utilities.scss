@@ -44,6 +44,11 @@
         height: 1px;
         background-color: rgba($grey, .5);
         margin: 0;
+
+
+        @media only screen and (max-width: 96.875em){
+            width: 5vw;
+        }
     }
 }
 
@@ -53,4 +58,8 @@
 
 .fl-center{
     justify-content: center;
+}
+
+.fl-row{
+    flex-direction: row !important;
 }

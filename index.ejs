@@ -512,7 +512,7 @@
         <p class="description center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum suscipit ullam quod ex expedita placeat in aliquid laborum quo, quae iure molestias ipsam repellat perspiciatis magni corrupti consequuntur vero animi.</p>
       </div>
 
-      <div class="row wrap fl-center">
+      <div class="row wrap fl-center fl-row">
         <div class="history__item">
           <span class="line line--horizontal-grey"></span>
           <p class="history__date">Mar 16 <span class="history__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></p>
@@ -547,11 +547,23 @@
           <h3 class="title-contacts">Contacts</h3>
           <p class="contacts__description margin-bottom-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
-          <div class="row">
+          <div class="row fl-row">
             <form action="submit" class="contacts__form">
-              <input placeholder="Name" type="text" class="contacts__form-input">
-              <input placeholder="E-mail" type="email" class="contacts__form-input">
-              <input placeholder="Message" type="text" class="contacts__form-input">
+              <div class="contacts__input-container">
+                  <input id="name" placeholder="Name" type="text" class="contacts__form-input" required>
+                  <label for="name" class="contacts__input-label">Name</label>
+              </div>
+
+              <div class="contacts__input-container">
+                <input id="email" placeholder="E-mail" type="email" class="contacts__form-input" required>
+                <label for="email" class="contacts__input-label">E-mail</label>
+              </div>
+              
+              <div class="contacts__input-container">
+                <input id="message" placeholder="Message" type="text" class="contacts__form-input" required>
+                <label for="mesage" class="contacts__input-label">Message</label>
+              </div>
+              
               <button class="contacts__form-button">Send</button>
             </form>
     

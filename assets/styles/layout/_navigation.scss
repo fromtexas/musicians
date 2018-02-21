@@ -13,5 +13,31 @@
         font-size: 2.4rem;
         padding: 1rem 2rem;
         color: $grey;
+        transition: all .5s;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: $black;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .4s;
+        }
+
+        &:hover{
+            color: $black;
+
+            &::before{
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 85.625em){
+            font-size: 2rem;
+        }
     }
 }
