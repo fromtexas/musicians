@@ -39,6 +39,16 @@ body{
     @include title($black);
 }
 
+.title-contacts{
+    @include title($black);
+    display: inline;
+
+    &::before{
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
 .description{
     color: $grey;
     font-family: 'Open Sans', sans-serif;
