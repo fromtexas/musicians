@@ -10,6 +10,12 @@
     background-size: cover;
     position: relative;
 
+    &__pic{
+        display: block;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
     &__arrow-container{
         position: absolute;
         top: 50%;
