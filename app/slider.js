@@ -5,16 +5,21 @@ const slider = (() => {
     const dotsContainer = document.getElementsByClassName('slider__dots-row')[0];
     let currentSlide = 0;
 
-    [...slides].forEach((dot, index) => {
+    const dotsInjection = () => {
+        [...slides].forEach((dot, index) => {
 
-        if(index === 0) {
-            dotsContainer.innerHTML += `<span class="slider__dot slider__active-dot"></span>`;
-        } else {
-            dotsContainer.innerHTML += `<span class="slider__dot "></span>`;
-        }
-   
-    });
+            if(index === 0) {
+                dotsContainer.innerHTML += `<span class="slider__dot slider__active-dot"></span>`;
+            } else {
+                dotsContainer.innerHTML += `<span class="slider__dot "></span>`;
+            }
+       
+        });
+    };
 
+    
+    dotsInjection();
+    
     const dots = document.getElementsByClassName('slider__dot');
 
 

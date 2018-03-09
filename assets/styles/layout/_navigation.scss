@@ -3,6 +3,10 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include respond(tab-port){
+        display: none;
+    }
+
     &__item,
     &__item:link,
     &__item:visited{
